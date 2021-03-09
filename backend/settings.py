@@ -20,7 +20,9 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY') or env('DJANGO_SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DJANGO_DEBUG') or env('DJANGO_DEBUG')
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'livrosadoidado-production.herokuapp.com',
+    ]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
