@@ -40,7 +40,7 @@ class MyUser(AbstractUser):
     objects = MyUserManager()
 
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ['email','password']
+    REQUIRED_FIELDS = ['password',]
 
     def __str__(self):
         return self.email
